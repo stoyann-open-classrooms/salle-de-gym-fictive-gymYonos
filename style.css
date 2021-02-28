@@ -385,17 +385,122 @@ nav a {
 
 
 
+/* ----------------- SECTION ÉQUIPEMENTT   -------------------- */
 
 
+.titre-equipements{
+    text-align: center;
+    font-size: 70px;
+    color: #000;
+    padding: 50px 0;
+    text-transform: uppercase;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
 
 
+#equipement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto;
+}
 
 
+.btn-modale{
+    width: 350px;
+    height: 400px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+
+}
+
+.btn-modale:nth-child(1){
+    background-image: url(ressources/img1-equip.jpg);
+}
+
+.btn-modale:nth-child(2){
+    background-image: url(ressources/img2-equip.jpg);
+}
+
+.btn-modale:nth-child(3){
+    background-image: url(ressources/img3-equip.jpg);
+}
+
+.btn-modale:nth-child(4){
+    background-image: url(ressources/img4-equip.jpg);
+}
+
+.btn-modale:nth-child(5){
+    background-image: url(ressources/img5-equip.jpg);
+}
+
+.btn-modale:nth-child(6){
+    background-image: url(ressources/img6-equip.jpg);
+}
+
+.btn-modale:nth-child(7){
+    background-image: url(ressources/img7-equip.jpg);
+}
+
+.btn-modale:nth-child(8){
+    background-image: url(ressources/img8-equip.jpg);
+}
+
+.btn-modale:nth-child(9){
+    background-image: url(ressources/img9-equip.jpg);
+}
+
+.bloc-modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    /* display: none; */
+
+}
 
 
+.active-modale{
+    display: block;
+}
+.bloc-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+}
 
+.bloc-modale img{
+    width: 100%;
 
+}
 
-
-
-
+.fermeture-modale{
+    position: absolute;
+    z-index: 4000;
+    top: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    color: white;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
