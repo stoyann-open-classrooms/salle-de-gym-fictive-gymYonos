@@ -301,23 +301,84 @@ nav a {
     }
 }
 
+/* ----------------- section choix  -------------------- */
 
 
+#choix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.entrainement-choix{
+    width: 30%;
+    text-align: center;
+    color: #f1f1f1;
+    margin: 50px 20px 70px;
+}
+.entrainement-choix h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
 
 
+.entrainement-choix p {
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto 30px;
+}
+
+.btn-outline-choix{
+    width: 300px;
+    padding: 15px 0;
+    font-size: 22px;
+    background: #000;
+    color: #f1f1f1;
+    border:1px solid #f1f1f1 ;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-outline-choix:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #000;
+}
 
 
+@media screen and (max-width: 1200px) {
+    .entrainement-choix {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    
+    #choix{
+        flex-direction: column;
+
+    }
+    .entrainement-choix h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
 
 
+    }
+    .btn-outline-choix{
+        width: 250px;
+    }
+    .entrainement-choix{
+        width: 350px;
+        margin: 50px 0px 70px;
 
+    }
 
-
-
-
-
-
-
-
+    .entrainement-choix:nth-child(1){
+        margin: 50px 20px 0px;
+    }
+}
 
 
 
