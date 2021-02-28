@@ -57,17 +57,82 @@ nav a {
     }
 }
 
-/* -----------------acceuil fondu -------------------- */
+/* -----------------ACCUEIL FONDU -------------------- */
+
+    .accueil {
+        height: 800px;
+        display: flex;
+        overflow: hidden;
+
+    }
+
+    .bloc-gauche-accueil{
+        position: relative;
+        width: 40%;
+        height: 100%;
+        background: #000;
+        box-shadow: 90px  0 100px  100px #000;
+
+    }
+
+    h1{
+        color: #f1f1f1;
+        font-family: Montserrat , Helvetica, sans-serif;
+        font-size: 90px;
+        padding-top: 200px;
+        padding-bottom: 20px;
+        margin-left: 8vw;
+        white-space: nowrap;
+        }
+
+        .accueil p {
+            color: #f1f1f1;
+            font-size: 30px;
+            width: 600px;
+            margin-left: 8vw;
+            line-height: 1.3;
+        }
+     
+        .cont-btn-home{
+            display: flex;
+
+        }
+
+        .btn-accueil {
+            font-size: 18px;
+            text-align: center;
+            color: #f1f1f1;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 40px;
+            border: 1px solid #f1f1f1;
+            width: 150px;
+            cursor: pointer;
+        }
 
 
+        .btn-accueil:hover {
+            transition: all 0.2s ease-in-out;
+            color: #000;
+            background: #f1f1f1;
+        }
 
+        .b1{
+            margin-left: 8vw;
+        }
 
+        .b2 {
+            margin-left: 10px;
+        }
 
+        .bloc-droit-accueil {
+            background-image: url(ressources/gym-accueil.jpg);
+            width: 60%;
+            height: 100%;
+            background-position: 70% 10%;
 
-
-
-
-
+        }
 
 
 
